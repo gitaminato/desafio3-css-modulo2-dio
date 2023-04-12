@@ -1,0 +1,21 @@
+Luckiest Guy
+Regular
+
+Open Sans
+Regular
+ExtraBold
+
+tile-gray
+23272A
+
+title-white
+FFFFFF
+
+background-lightgray
+F6F6F6
+
+background-white
+FFFFFF
+
+background-gray
+23272A

@@ -15,61 +15,119 @@ p {
   font-weight: 400;
 }
 
-@media(max-width:428px) {
+
+header {
+  background-image: url(../images/Background.png);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 70px 25px 70px 25px;
+  gap: 24px;
+  color: white;
+}
+
+.headerP {
+  max-width: 760px;
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.headerButtonDownload, .headerButtonNav {
+  height: 55px;
+  background-color: white;
+  border-radius: 50px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  padding: 25px;
+}
+
+.headerButtonNav {
+  background-color: #23272A;
+  color: white;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 25px 30px 25px;
+  gap: 25px;
+  max-width: 900px;
+}
+
+.sectionText {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.Section2, .Section4 {
+  background-color: #F6F6F6;
+}
+
+.Section2 {
+  flex-direction: row-reverse;
+}
+
+.Section4 {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Section4H2, .Section4P {
+  text-align: center;
+}
+
+footer {
+  background-color: #23272A;
+  display: flex;
+  justify-content: center;
+  padding: 45px;
+}
+
+.footerLogo {
+  height: 45px;
+}
+
+
+@media(max-width:760px) {
   header {
     background-image: url(../images/Background-mobile.png);
     background-size: cover;
-    display: flex;
-    flex-direction: column;
-    padding: 70px 25px 70px 25px;
-    gap: 24px;
-    color: white;
+    align-items: normal;
   }
 
   .buttons {
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 15px;
   }
 
-  .headerButtonDownload {
-    height: 55px;
-    background-color: white;
-    border-radius: 50px;
+  .headerButtonDownload, .headerButtonNav {
     width: 100%;
-    font-size: 16px;
-  }
-
-  .headerButtonNav {
-    height: 55px;
-    background-color: #23272A;
-    color: white;
-    border-radius: 50px;
-    width: 100%;
-    font-size: 16px;
+    display: flex;
+    justify-content: center;
   }
 
   section {
-    display: flex;
     flex-direction: column;
-    padding: 30px 25px 30px 25px;
-    gap: 25px;
   }
 
-  .Section2, .Section4 {
-    background-color: #F6F6F6;
-  }
-
-  footer {
-    background-color: #23272A;
-    display: flex;
-    justify-content: center;
-    padding: 45px;
-  }
-
-  .footerLogo {
-    height: 45px;
+  .Section2 {
+    flex-direction: column;
   }
 
 }
+
